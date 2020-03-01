@@ -1,6 +1,33 @@
-activity,count
-running,730
-chasing,279
-climbing,658
-eating,760
-foraging,1435
+name,km/h,type
+Peregrine Falcon,389,air
+Golden Eagle,280,air 
+White-throated Needletail Swift,169, air
+Eurasian Hobby,160,air
+Mexican Free-tailed Bat,160, air
+Frigatebird,153,air
+Rock Dove,149,air
+Spur-winged Goose,142,air
+Black Marlin,129,water
+Gyrfalcon,128,air
+Grey-headed Albatross,127,air
+Cheetah,115,land
+Sailfish,110,water
+Anna's Hummingbird,98,air
+Swordfish,97,water
+American Woodcock,8,air
+Giant Galapagos Tortoise,2,land
+Seahorse,0.2,water
+Sloth,0.3,land
+Banana Slug,0.000000023,land
+Coral,0,water
+Mouse,13,land
+Pig,15,land
+Polar Bear,30,land
+Manatee,30,land
+Brown Bear,35,land
+Chimpanzee,40,land
+African Bush Elephant,41,land
+Human,45,land
+Domestic cat,48,land
+
+

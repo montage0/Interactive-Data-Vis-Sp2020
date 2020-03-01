@@ -1,0 +1,36 @@
+body {
+    /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
+    font-family: helvetica neue thin, helvetica neue, "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    color: rgb(167, 164, 164);
+    padding: 1em 3em;
+  }
+  
+  h1 {
+    text-align: left;
+    font-family: helvetica neue thin, helvetica neue, "Source Sans Pro", sans-serif;
+    font-size: 24px;
+    color:  rgb(23, 163, 168);
+    font-weight:normal;
+  }
+  .dot {
+    cursor: pointer;
+    color: steelblue;
+    opacity: 0.5;
+  }
+  
+  .dot:hover {
+    fill: orange;
+  }
+  
+  .axis-label {
+    font-size: 15px;
+    font-family: helvetica neue thin, helvetica neue, "Source Sans Pro", sans-serif;
+    fill: rgb(167, 164, 164);
+    text-anchor: middle;
+  }
+  
+  .trend {
+    fill: none;
+    stroke: rgb(23, 163, 168);
+  }

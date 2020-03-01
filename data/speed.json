@@ -1,0 +1,34 @@
+[
+    {
+      "name": "African Bush Elephant",
+      "Where": "land",
+      "km": 41,
+      "size": 396
+    },
+    {
+        "name": "American Woodcock",
+        "Where": "air",
+        "km": 8,
+        "size": 2.5
+      },
+      {
+        "name": "Anna's Hummingbird",
+        "Where": "air",
+        "km": 98,
+        "size": 3
+      },
+      {
+        "name": "Banana Slug",
+        "Where": "land",
+        "km": 0.000000023,
+        "size": 30
+      },
+
+      {
+        "name": "Black Marlin",
+        "Where": "water",
+        "km": 129,
+        "size": 46
+      },
+      
+  ]

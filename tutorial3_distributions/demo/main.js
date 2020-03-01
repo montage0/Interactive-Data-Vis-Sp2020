@@ -18,7 +18,7 @@ let yScale;
  * */
 let state = {
   data: [],
-  selectedParty: "All",
+  selectedwhere: "All",
 };
 
 /**

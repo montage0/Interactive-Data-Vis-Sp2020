@@ -1,0 +1,36 @@
+body {
+    font-family: futura, helvetica neue, Arial, sans-serif;
+    color: rgb(158, 154, 154);
+    padding: 1em;
+  }
+  
+  section {
+    padding: 1em 0;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  th {
+    padding: 0 0.5em;
+    color: rgb(27, 170, 196);
+  }
+  
+  tr {
+    border-bottom: solid 1px #ecece7;
+    line-height: 1.75;
+  }
+  
+  td {
+    text-align: rightleft;
+    padding: 0 0.5em;
+    background-color: rgba(255, 255, 255, 0.651);
+  }
+  
+  .fast {
+    background-color: rgb(235, 230, 227);
+  }
+
+
+  
