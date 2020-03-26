@@ -28,12 +28,12 @@ let state = {
  * Using a Promise.all([]), we can load more than one dataset at a time
  * */
 Promise.all([
-  d3.json("../../data/us-state.json"),
-  d3.csv("../../data/Meteorite_Landings.csv", d3.autoType),
-]).then(([geojson, extremes]) => {
+  d3.json("us-state.json"),
+  d3.csv("Meteorite_Landings.csv", d3.autoType),
+]).then(([geojson, meteorites]) => {
   state.geojson = geojson;
-  state.extremes = extremes;
-  console.log("state: ", state);
+  state.meteorites = meteorites;
+  // console.log("state: ", state);
   init();
 });
 
@@ -70,17 +70,17 @@ function init() {
 
   // EXAMPLE 1: going from Lat-Long => x, y
   // for how to position a dot
-  const GradCenterCoord = { latitude: 40.7423, longitude: -73.9833 };
-  svg
-    .selectAll("circle")
-    .data([GradCenterCoord])
-    .join("circle")
-    .attr("r", 20)
-    .attr("fill", "steelblue")
-    .attr("transform", d => {
-      const [x, y] = projection([d.longitude, d.latitude]);
-      return `translate(${x}, ${y})`;
-    });
+
+  svg.append("circle").attr("r",2).attr("transform", function() {return "translate(" + projection([-75,43]) + ")";});
+
+  svg.selectAll("circles.points")
+  .data(state.meteorites)
+  .enter()
+  .append("circle")
+  .attr("r",2)
+  .attr("transform", function(d) {return "translate(" + projection([d.lon,d.lat]) + ")";});
+
+
 
   // EXAMPLE 2: going from x, y => lat-long
   // this triggers any movement at all while on the svg

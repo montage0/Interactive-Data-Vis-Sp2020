@@ -5,7 +5,7 @@ const width = window.innerWidth * 0.7,
   height = window.innerHeight * 0.7,
   margin = { top: 20, bottom: 50, left: 60, right: 40 },
   radius = 5;
-  default_selection = "Select a Country";
+  
 
 /** these variables allow us to access anything we manipulate in
  * init() but need access to in draw().
@@ -19,13 +19,13 @@ let yScale;
  * */
 let state = {
   data: [],
-  selectedParty: "All",
+  country: "All",
 };
 
 /**
  * LOAD DATA
  * */
-d3.csv("../../data/epi2018country.csv", d3.autoType).then(raw_data => {
+d3.csv("epi2018country.csv", d3.autoType).then(raw_data => {
   console.log("raw_data", raw_data);
   state.data = raw_data;
   init();
@@ -58,10 +58,10 @@ function init() {
     console.log("new selected country is", this.value);
     // `this` === the selectElement
     // this.value holds the dropdown value a user just selected
-    state.selectedParty = this.value;
+    state.country = this.value;
     draw(); // re-draw the graph based on this new selection
   });
-
+  default_selection = "Select a Country";
   // add in dropdown options from the unique values in the data
   selectElement
     .selectAll("option")
@@ -117,8 +117,8 @@ function draw() {
   // filter the data for the selectedParty
   let filteredData = state.data;
   // if there is a selectedParty, filter the data before mapping it to our elements
-  if (state.selectedParty !== "All") {
-    filteredData = state.data.filter(d => d.country === state.selectedParty);
+  if (state.country !== "All") {
+    filteredData = state.data.filter(d => d.country === state.country);
   }
 
   const dot = svg
