@@ -17,7 +17,7 @@ let state = {
 /**
  * LOAD DATA
  * */
-d3.csv("New_York_City_Leading_Causes_of_Death.csv", d3.autotype).then(data => {
+d3.csv("../../data/netflix_titles_with_genre.csv", d3.autotype).then(data => {
   state.data = data;
   init();
 });
@@ -41,17 +41,18 @@ function init() {
     .attr("width", width)
     .attr("height", height);
 
-  const uniqueGenres = [...new Set(state.data.map(d => d.Year))];
+  const uniqueGenres = [...new Set(state.data.map(d => d.genre))];
   const colorScale = d3
     .scaleOrdinal()
     .domain(uniqueGenres)
-    .range(d3.schemeBlues[6]);
+    .range(d3.schemeSet3);
 
   const rolledUp = d3.rollups(
     state.data,
     v => ({ count: v.length, movies: v }), // reduce function,
-    d => d.Year,
-    d => d.Cause,
+    d => d.genre,
+    d => d.type,
+    d => d.rating
   );
 
   console.log("rolledUp", rolledUp);
@@ -84,8 +85,8 @@ function init() {
 
   leaf
     .append("rect")
-    .attr("fill-opacity", 1)
-    .attr("fill", d => colorScale(d.data[1].movies[0].Year)) // take the genre from the first one in the group
+    .attr("fill-opacity", 0.6)
+    .attr("fill", d => colorScale(d.data[1].movies[0].genre)) // take the genre from the first one in the group
     .attr("width", d => d.x1 - d.x0)
     .attr("height", d => d.y1 - d.y0)
     .on("mouseover", d => {

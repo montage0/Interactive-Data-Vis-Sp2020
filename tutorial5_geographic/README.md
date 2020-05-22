@@ -9,7 +9,11 @@ The goals for this tutorial are:
 
 ## How to setup, serve, and deploy:
 
+<<<<<<< HEAD
 [Please reference previous tutorials, we assume you know how to do this already]
+=======
+(Please reference previous tutorials, we assume you know how to do this already)
+>>>>>>> upstream/master
 
 ## Week 5 Assignment:
 

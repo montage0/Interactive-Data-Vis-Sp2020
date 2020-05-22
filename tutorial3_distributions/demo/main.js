@@ -24,7 +24,7 @@ let state = {
 /**
  * LOAD DATA
  * */
-d3.json("../../data/environmentRatings.json", d3.autoType).then(raw_data => {
+d3.csv("../../data/New_York_City_Leading_Causes_of_Death.csv", d3.autoType).then(raw_data => {
   console.log("raw_data", raw_data);
   state.data = raw_data;
   init();
@@ -37,13 +37,13 @@ d3.json("../../data/environmentRatings.json", d3.autoType).then(raw_data => {
 function init() {
   // SCALES
   xScale = d3
-    .scaleLinear()
-    .domain(d3.extent(state.data, d => d.ideology_rating))
+    .scaleBand()
+    .domain(d3.extent(state.data, d => d.Cause))
     .range([margin.left, width - margin.right]);
 
   yScale = d3
     .scaleLinear()
-    .domain(d3.extent(state.data, d => d.environmental_rating))
+    .domain(d3.extent(state.data, d => d.Year))
     .range([height - margin.bottom, margin.top]);
 
   // AXES
@@ -64,7 +64,7 @@ function init() {
   // add in dropdown options from the unique values in the data
   selectElement
     .selectAll("option")
-    .data(["All", "D", "R", "I"]) // unique data values-- (hint: to do this programmatically take a look `Sets`)
+    .data(["All", "White Non-Hispanic", "Black Non-Hispanic", "Hispanic", "Asian and Pacific Islander", "Other Race/Ethnicity", "Not Stated/Unknown",]) // unique data values-- (hint: to do this programmatically take a look `Sets`)
     .join("option")
     .attr("value", d => d)
     .text(d => d);
@@ -86,7 +86,7 @@ function init() {
     .attr("class", "axis-label")
     .attr("x", "50%")
     .attr("dy", "3em")
-    .text("Ideology Rating");
+    .text("Leading Cause");
 
   // add the yAxis
   svg
@@ -97,9 +97,9 @@ function init() {
     .append("text")
     .attr("class", "axis-label")
     .attr("y", "50%")
-    .attr("dx", "-3em")
+    .attr("dx", "-3.5em")
     .attr("writing-mode", "vertical-rl")
-    .text("Environmental Rating");
+    .text("Year");
 
   draw(); // calls the draw function
 }
@@ -113,12 +113,12 @@ function draw() {
   let filteredData = state.data;
   // if there is a selectedParty, filter the data before mapping it to our elements
   if (state.selectedParty !== "All") {
-    filteredData = state.data.filter(d => d.party === state.selectedParty);
+    filteredData = state.data.filter(d => d.Race === state.selectedParty);
   }
 
   const dot = svg
     .selectAll(".dot")
-    .data(filteredData, d => d.name) // use `d.name` as the `key` to match between HTML and data elements
+    .data(filteredData, d => d.Race) // use `d.name` as the `key` to match between HTML and data elements
     .join(
       enter =>
         // enter selections -- all data elements that don't have a `.dot` element attached to them yet
@@ -128,19 +128,23 @@ function draw() {
           .attr("stroke", "lightgrey")
           .attr("opacity", 0.5)
           .attr("fill", d => {
-            if (d.party === "D") return "blue";
-            else if (d.party === "R") return "red";
-            else return "purple";
+            if (d.Race === "White Non-Hispanic") return "red";
+            else if (d.Race === "Black Non-Hispanic") return "blue";
+            else if (d.Race === "Hispanic") return "green";
+            else if (d.Race === "Asian and Pacific Islander") return "purple";
+            else if (d.Race === "Other Race/Ethnicity") return "pink";
+            else if (d.Race === "Not Stated/Unknown") return "gray";
+            else return "gray";
           })
           .attr("r", radius)
-          .attr("cy", d => yScale(d.environmental_rating))
+          .attr("cy", d => yScale(d.Year))
           .attr("cx", d => margin.left) // initial value - to be transitioned
           .call(enter =>
             enter
               .transition() // initialize transition
-              .delay(d => 500 * d.ideology_rating) // delay on each element
+              .delay(d => 500 * d.Cause) // delay on each element
               .duration(500) // duration 500ms
-              .attr("cx", d => xScale(d.ideology_rating))
+              .attr("cx", d => xScale(d.Cause))
           ),
       update =>
         update.call(update =>
@@ -158,7 +162,7 @@ function draw() {
           // exit selections -- all the `.dot` element that no longer match to HTML elements
           exit
             .transition()
-            .delay(d => 50 * d.ideology_rating)
+            .delay(d => 50 * d.Cause)
             .duration(500)
             .attr("cx", width)
             .remove()

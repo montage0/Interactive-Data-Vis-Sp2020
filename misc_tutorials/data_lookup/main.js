@@ -5,9 +5,7 @@ const width = window.innerWidth * 0.9,
   height = window.innerHeight * 0.7,
   margin = { top: 20, bottom: 50, left: 60, right: 40 };
 
-/** these variables allow us to access anything we manipulate in
- * init() but need access to in draw().
- * All these variables are empty before we assign something to them.*/
+
 let svg;
 
 /**
@@ -15,7 +13,7 @@ let svg;
  * */
 let state = {
   geojson: null,
-  extremes: null,
+  populations: null,
   hover: {
     latitude: null,
     longitude: null,
@@ -28,12 +26,12 @@ let state = {
  * Using a Promise.all([]), we can load more than one dataset at a time
  * */
 Promise.all([
-  d3.json("../data/us-state.json"),
-  d3.csv("../data/usHeatExtremes.csv", d3.autoType),
-]).then(([geojson, extremes]) => {
+  d3.json("../../data/usState.json"),
+  d3.csv("../../data/statePopulations.csv", d3.autoType), 
+]).then(([geojson, populations]) => {
   state.geojson = geojson;
-  state.extremes = extremes;
-  // console.log("state: ", state);
+  state.populations = populations;
+  console.log("state: ", state);
   init();
 });
 
@@ -42,12 +40,16 @@ Promise.all([
  * this will be run *one time* when the data finishes loading in
  * */
 function init() {
-  // our projection and path are only defined once, and we don't need to access them in the draw function,
-  // so they can be locally scoped to init()
+
+  const colorScale = d3.scaleSequential(d3.interpolateBlues)
+    .domain(d3.extent(state.populations.map(d => d['Voting Age Citizens'])))
+
   const projection = d3.geoAlbersUsa().fitSize([width, height], state.geojson);
   const path = d3.geoPath().projection(projection);
 
-  // create an svg element in our main `d3-container` element
+  /* this javascript Map works very fast for large amounts of data. Its negligible for something like the 50 states, but is a valuable asset for 2000+ items. Maps require an argument of an array; the first item in the array is the lookup value, the second is the returning value. */
+  const populationLookup = new Map(state.populations.map(d => [d.State, d['Voting Age Citizens']]))
+
   svg = d3
     .select("#d3-container")
     .append("svg")
@@ -56,30 +58,36 @@ function init() {
 
   svg
     .selectAll(".state")
-    // all of the features of the geojson, meaning all the states as individuals
     .data(state.geojson.features)
     .join("path")
     .attr("d", path)
     .attr("class", "state")
-    .attr("fill", "transparent")
-    .on("mouseover", d => {
-      // when the mouse rolls over this feature, do this
-      state.hover["state"] = d.properties.NAME;
-      draw(); // re-call the draw function when we set a new hoveredState
-    });
+    .attr("fill", d => {
+      /* the curly braces here allow me to do more when this function is envoked each time.
+      the best use of this is to console log the value, so for each item (d) in data, we console log (d) to get more clarity */
+      // console.log(d) 
 
-  // EXAMPLE 1: going from Lat-Long => x, y
-  // for how to position a dot
-  const GradCenterCoord = { latitude: 40.7423, longitude: -73.9833 };
-  svg
-    .selectAll("circle")
-    .data([GradCenterCoord])
-    .join("circle")
-    .attr("r", 20)
-    .attr("fill", "steelblue")
-    .attr("transform", d => {
-      const [x, y] = projection([d.longitude, d.latitude]);
-      return `translate(${x}, ${y})`;
+      // PART 1: I will save the state name from the data element that is getting created
+      const stateName = d.properties.NAME
+
+      // PART 2: get the data associated with that state name
+
+      // OPTION A: using [array].find
+      /* This version is the "crude" option, not performance optimized, that just looks for the state name in the populations data set */
+      const statePopulations = state.populations.find(e => e.State === stateName)['Voting Age Citizens'] 
+
+      // OPTION B: using a pre-defined map.get
+      /* This version is more advanced, leveraging a pre-defined Map.*/
+      const statePopulations2 = populationLookup.get(stateName)
+
+      // PART 3: use the color scale defined above to return a color
+      return colorScale(statePopulations)
+
+    })
+    // .attr("fill", "transparent")
+    .on("mouseover", d => {
+      state.hover["state"] = d.properties.NAME;
+      draw();
     });
 
   // EXAMPLE 2: going from x, y => lat-long

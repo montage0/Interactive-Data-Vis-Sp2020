@@ -1,0 +1,215 @@
+name,total,deaths,code,AirQuality,WaterSanitation,AirPollution,Emissions,iso,Country
+Afghanistan,8145,187,AFG,44.67,25.75,91.44,33.04,AFG,Afghanistan
+Albania,964,31,ALB,65.47,66.56,86.07,68.36,ALB,Albania
+Algeria,7542,568,ALG,93.98,60.26,46.15,26.94,DZA,Algeria
+Andorra,762,51,AND,44.66,9.2,57.92,48.86,AGO,Angola
+Angola,52,3,AGO,89.13,53.33,46.94,11.26,ATG,Antigua and Barbuda
+Anguilla,3,,AIA,84.57,73.07,19.51,46.65,ARG,Argentina
+Antigua and Barbuda,25,3,ATG,53.55,61.94,66.93,49.82,ARM,Armenia
+Argentina,9283,403,ARG,100,98.44,38.85,48.18,AUS,Australia
+Armenia,5606,70,ARM,82.21,94.63,86.31,62.79,AUT,Austria
+Aruba,101,3,ABW,47.44,48.53,95.36,73.44,AZE,Azerbaijan
+Australia,7081,100,AUS,84.19,55.4,10.6,18.76,BHS,Bahamas
+Austria,16353,633,AUT,67.81,63.06,59.38,44.31,BHR,Bahrain
+Azerbaijan,3631,43,AZE,4.12,28.47,40.22,46.95,BGD,Bangladesh
+Bahamas,97,11,BHS,100,55.64,40.21,34.57,BRB,Barbados
+Bahrain,7888,12,BHR,69.71,68.66,72.33,64.73,BLR,Belarus
+Bangladesh,26738,386,BGD,88.63,96.09,79.02,63.81,BEL,Belgium
+Barbados,90,7,BRB,74.73,46.74,39.57,45.03,BLZ,Belize
+Belarus,32426,179,BLR,50.66,6.37,25.05,34.35,BEN,Benin
+Belgium,55983,9150,BEL,36.89,32.6,48.28,43.76,BTN,Bhutan
+Belize,18,2,BLZ,70.92,44.57,38.72,33.49,BOL,Bolivia
+Benin,130,2,BEN,60.37,71.54,30.79,26.8,BIH,Bosnia and Herzegovina
+Bermuda,125,9,BMU,43.33,21.8,42.46,47.24,BWA,Botswana
+Bhutan,21,,BTN,78.78,45.91,37.55,33.24,BRA,Brazil
+Bolivia,4919,199,BOL,98.76,94.9,2.51,27.42,BRN,Brunei Darussalam
+Bosnia and Herzegovina,2338,136,BIH,68.49,71.26,52.91,56.04,BGR,Bulgaria
+Botswana,29,1,BWA,61.85,8.45,28.47,26.24,BFA,Burkina Faso
+Brazil,293357,18894,BRA,36.92,0.86,38.18,16.18,BDI,Burundi
+British Virgin Islands,8,1,VGB,41.91,35.26,37.52,47.63,KHM,Cambodia
+Brunei,141,1,BRN,50.54,13.45,33.71,58.53,CMR,Cameroon
+Bulgaria,2331,120,BGR,99.28,94.69,44.25,39.88,CAN,Canada
+Burkina Faso,809,52,BFA,70.81,40.66,72.99,69.56,CPV,Cabo Verde
+Burundi,42,1,BDI,42.93,0,40.31,17.55,CAF,Central African Republic
+Cabo Verde,349,3,CPV,60.82,0.32,78.57,49.62,TCD,Chad
+Cambodia,122,,KHM,69.22,79.61,3.37,37.37,CHL,Chile
+Cameroon,3733,146,CMR,14.39,68.24,57.08,68.62,CHN,China
+Canada,80142,6031,CAN,77.01,59.96,56.76,50.1,COL,Colombia
+CAR,418,,CAF,64.38,10,30.02,49.44,COM,Comoros
+Caribbean Netherlands,6,,CNE,84.43,62.78,58.15,59.29,CRI,Costa Rica
+Cayman Islands,111,1,CYM,53.88,9.53,51.38,38.57,CIV,CÃ´te d'Ivoire
+Chad,565,57,TCD,64.07,70.01,43.23,54.41,HRV,Croatia
+Channel Islands,558,45,CHI,86.47,57.5,75.32,49.15,CUB,Cuba
+Chile,53617,544,CHL,87.5,92.35,49.65,66.26,CYP,Cyprus
+China,82967,4634,CHN,65.77,69.98,57.07,54.65,CZE,Czech Republic
+Colombia,17687,630,COL,22.57,10.01,40.16,34.26,COD,Dem. Rep. Congo
+Comoros,34,1,COM,99.16,97.78,71,67.56,DNK,Denmark
+Congo,420,15,COG,69.73,19.3,11.01,46.4,DJI,Djibouti
+Costa Rica,897,10,CRI,80.39,50.64,31.59,51.78,DMA,Dominica
+Croatia,2234,96,HRV,77.96,42.4,65.46,61.27,DOM,Dominican Republic
+Cuba,1900,79,CUB,82.97,52.2,25.92,46.8,ECU,Ecuador
+Curaçao,16,1,CUR,88.88,32.78,47.55,55.68,EGY,Egypt
+Cyprus,922,17,CYP,76.15,42.34,28.11,63.47,SLV,El Salvador
+Czechia,8721,304,CZE,57.18,31.89,99.97,70.08,GNQ,Equatorial Guinea
+Denmark,11117,554,DNK,64.88,7.09,43.47,29.57,ERI,Eritrea
+Djibouti,1828,9,DJI,78.87,58.45,54.29,33.62,EST,Estonia
+Dominica,16,,DMA,43.66,9.35,37.81,64.18,ETH,Ethiopia
+Dominican Republic,13477,446,DOM,70.36,39.93,17.73,56.91,FJI,Fiji
+DRC,1731,61,DRC,99,100,49.1,62.33,FIN,Finland
+Ecuador,34854,2888,ECU,95.97,97.22,96.82,70.46,FRA,France
+Egypt,14229,680,EGY,51.5,22.23,53.75,30.71,GAB,Gabon
+El Salvador,1571,32,SLV,63.14,16.8,41.36,36.67,GMB,Gambia
+Equatorial Guinea,890,7,GNQ,54.93,59.93,48.55,48.41,GEO,Georgia
+Eritrea,39,,ERI,84.09,96.74,93.3,55.47,DEU,Germany
+Estonia,1794,64,EST,52.37,26.52,40.5,57.59,GHA,Ghana
+Eswatini,217,2,ESW,89.23,100,46.41,42.17,GRC,Greece
+Ethiopia,389,5,ETH,82.88,48.26,30.55,21.61,GRD,Grenada
+Faeroe Islands,187,,FRO,68.3,29.5,30.23,57.46,GTM,Guatemala
+Falkland Islands,13,,FLK,60.77,12.79,31.6,37.24,GIN,Guinea
+Fiji,18,,FJI,60.5,10.01,32.8,53.23,GNB,Guinea-Bissau
+Finland,6443,304,FIN,75.49,38.67,32.14,34.82,GUY,Guyana
+France,181575,28132,FRA,62.21,15.45,20.76,42.53,HTI,Haiti
+French Guiana,237,1,GUF,68.9,34.06,17.68,46.02,HND,Honduras
+French Polynesia,60,,PYF,52.3,66.26,75.22,61.68,HUN,Hungary
+Gabon,1567,12,GAB,98.55,100,49.11,61.96,ISL,Iceland
+Gambia,24,1,GMB,5.75,15.8,37.49,44.77,IND,India
+Georgia,721,12,GEO,52.04,31.41,47.62,53.43,IDN,Indonesia
+Germany,178531,8270,DEU,85.12,58.74,20.07,35.93,IRN,Iran
+Ghana,6269,31,GHA,72.91,41.05,36.33,19.73,IRQ,Iraq
+Gibraltar,149,,GIB,95.78,100,87.23,54.16,IRL,Ireland
+Greece,2850,166,GRC,95.67,92.03,75.82,57.09,ISR,Israel
+Greenland,11,,GRL,80.56,100,88.55,65.14,ITA,Italy
+Grenada,22,,GRD,78.74,51.04,21.03,52.26,JAM,Jamaica
+Guadeloupe,155,13,GLP,90.78,96.6,72.34,45.08,JPN,Japan
+Guatemala,2265,45,GTM,99.61,68.82,78.6,46.84,JOR,Jordan
+Guinea,2863,18,GIN,68.41,62.89,47.07,47.82,KAZ,Kazakhstan
+Guinea-Bissau,1089,6,GNB,62.93,0.63,29.04,51.37,KEN,Kenya
+Guyana,125,10,GUY,61.85,20.89,54.35,43.71,KIR,Kiribati
+Haiti,596,22,HTI,75.17,65.79,22.66,31.78,KWT,Kuwait
+Honduras,3100,151,HND,59.49,44.74,21.41,32.5,KGZ,Kyrgyzstan
+Hong Kong,1056,4,HKG,23.37,27.59,52.56,77.39,LAO,Laos
+Hungary,3641,473,HUN,77.66,60.62,84.31,42.89,LVA,Latvia
+Iceland,1803,10,ISL,95.18,60.31,55.29,43.86,LBN,Lebanon
+India,112442,3438,IND,42.18,2.86,58.26,44.79,LSO,Lesotho
+Indonesia,19189,1242,IDN,62.49,4.79,15.49,73.11,LBR,Liberia
+Iran,126949,7183,IRN,96.67,54.93,34.38,11.87,LBY,Libya
+Iraq,3724,134,IRQ,77.97,58.51,59.73,62.46,LTU,Lithuania
+Ireland,24315,1571,IRL,93.62,99.3,61.82,58.53,LUX,Luxembourg
+Isle of Man,336,24,IMN,66.43,69.16,56.99,63.85,MKD,Macedonia
+Israel,16667,279,ISR,61.04,4.04,41.21,16.23,MDG,Madagascar
+Italy,227364,32330,ITA,54.79,8.28,51.51,64.88,MWI,Malawi
+Ivory Coast,2231,29,CIV,69.32,63,45.61,47.68,MYS,Malaysia
+Jamaica,529,9,JAM,81.73,57.62,30.05,44.71,MDV,Maldives
+Japan,16385,771,JPN,63.41,2.69,53.03,55.47,MLI,Mali
+Jordan,672,9,JOR,94.4,100,57.32,67.04,MLT,Malta
+Kazakhstan,7234,35,KAZ,66.23,14.67,32.58,39.84,MRT,Mauritania
+Kenya,1029,50,KEN,85.88,61.05,27.74,48.06,MUS,Mauritius
+Kuwait,17568,124,KWT,71.9,57.58,52.73,46.84,MEX,Mexico
+Kyrgyzstan,1313,14,KGZ,67.08,46.39,54.96,35.17,FSM,Micronesia
+Laos,19,,LAO,59.92,61.02,59.02,47.9,MDA,Moldova
+Latvia,1016,21,LVA,64.3,60.54,41.66,53.98,MNG,Mongolia
+Lebanon,961,26,LBN,69.28,78.61,59.22,46.85,MNE,Montenegro
+Lesotho,1,,LSO,81.39,42.24,50.69,49.66,MAR,Morocco
+Liberia,238,23,LBR,61.43,16.18,48.45,23.49,MOZ,Mozambique
+Libya,69,3,LBY,36.57,31.76,76.15,76.26,MMR,Myanmar
+Liechtenstein,82,1,LIE,60.6,15.5,46.92,59.78,NAM,Namibia
+Lithuania,1577,60,LTU,3.94,23.54,49.58,35.11,NPL,Nepal
+Luxembourg,3971,109,LUX,89.68,98.26,96.56,52.55,NLD,Netherlands
+Macao,45,,MCO,98.99,93.37,52.1,55.78,NZL,New Zealand
+Madagascar,371,2,MDG,72.09,41.96,30.65,58.63,NIC,Nicaragua
+Malawi,71,3,MWI,61.22,2.44,31.11,6.36,NER,Niger
+Malaysia,7009,114,MYS,48.08,7.75,84.51,73.85,NGA,Nigeria
+Maldives,1186,4,MDV,97.14,99.65,24.76,63.58,NOR,Norway
+Mali,931,55,MLI,86.19,62.84,0.65,32.71,OMN,Oman
+Malta,584,6,MLT,15.69,20.02,32.38,50.79,PAK,Pakistan
+Martinique,192,14,MTQ,78.88,43.45,46.87,54.32,PAN,Panama
+Mauritania,141,4,MRT,60,18.48,22.16,55.36,PNG,Papua New Guinea
+Mauritius,332,10,MUS,65.39,44.96,53.42,54.05,PRY,Paraguay
+Mayotte,1475,19,MYT,58.21,50.38,57.76,58.04,PER,Peru
+Mexico,56594,6090,MEX,62.96,42.86,66.85,54.54,PHL,Philippines
+Moldova,6553,228,MDA,53.04,69.23,72.3,64.33,POL,Poland
+Monaco,97,4,MCO,90.99,93.59,67.18,56.89,PRT,Portugal
+Mongolia,140,,MNG,76.29,72.9,86.88,68.68,QAT,Qatar
+Montenegro,324,9,MNE,23.84,10.26,46.78,59.34,COG,Republic of Congo
+Montserrat,11,1,MSR,57.37,59.9,71.2,68.53,ROU,Romania
+Morocco,7133,194,March,79.99,63.93,77.78,49.88,RUS,Russia
+Mozambique,156,,MOZ,37.87,14.96,68.44,69.91,RWA,Rwanda
+MS Zaandam,9,2,MSZ,84.2,47.79,29.76,40.29,LCA,Saint Lucia
+Myanmar,199,6,MMR,79.96,47.25,32.99,55.95,VCT,Saint Vincent and the Grenadines
+Namibia,16,,NAM,67.42,49.92,65.79,42.8,WSM,Samoa
+Nepal,444,2,NPL,64.07,29.32,41.99,55.13,STP,SÃ£o TomÃ© and PrÃ­ncipe
+Netherlands,44447,5748,NLD,79.91,62.38,25.4,40.47,SAU,Saudi Arabia
+New Caledonia,18,,NCL,63.78,13.67,28.39,38.73,SEN,Senegal
+New Zealand,1503,21,NZL,56.67,69.73,59.76,61.77,SRB,Serbia
+Nicaragua,254,17,NIC,88.03,58.28,2.63,93.25,SYC,Seychelles
+Niger,920,58,NER,60.68,2.5,45.51,48.19,SLE,Sierra Leone
+Nigeria,6677,200,NGA,58.99,99,97.76,67.64,SGP,Singapore
+Macedonia,1858,110,MKD,59.42,69.62,79.51,74.21,SVK,Slovakia
+Norway,8281,234,NOR,71.25,70.59,49.85,51.16,SVN,Slovenia
+Oman,6043,30,OMN,60.53,28.02,59.13,63.2,SLB,Solomon Islands
+Pakistan,48091,1017,PAK,41.14,24.71,34.67,44.63,ZAF,South Africa
+Palestine,398,2,PSE,61.19,96.52,77.91,46.75,KOR,South Korea
+Panama,9977,287,PAN,94.07,100,69.34,67.77,ESP,Spain
+Papua New Guinea,8,,PNG,69.91,53.09,51.73,70.88,LKA,Sri Lanka
+Paraguay,833,11,PRY,64.56,24.46,48.28,72.11,SDN,Sudan
+Peru,104020,3024,PER,75.24,40.14,68.9,35.74,SUR,Suriname
+Philippines,13221,842,PHL,42.3,9.36,48.33,62.49,SWZ,Swaziland
+Poland,19739,962,POL,92.84,96.88,64.17,86.8,SWE,Sweden
+Portugal,29660,1263,PRT,91.06,99.99,98.7,90.55,CHE,Switzerland
+Qatar,37097,16,QAT,69.04,69.71,89.75,82.23,TWN,Taiwan
+Réunion,447,1,REU,23.22,29.9,49.45,60.73,TJK,Tajikistan
+Romania,17387,1151,ROU,60.55,11.8,50.76,43.1,TZA,Tanzania
+Russia,308705,2972,RUS,37.9,59.37,48.79,45.75,THA,Thailand
+Rwanda,314,,RWA,64.77,22.86,17.85,45.01,TLS,Timor-Leste
+S. Korea,11122,264,KOR,50.08,12.92,49.44,43.04,TGO,Togo
+Saint Kitts and Nevis,15,,KNA,68.96,46.97,63.12,49.38,TON,Tonga
+Saint Lucia,18,,LCA,93.91,56.29,50.27,50.02,TTO,Trinidad and Tobago
+Saint Martin,40,3,MAF,95.45,57.6,63.53,51.3,TUN,Tunisia
+Saint Pierre Miquelon,1,,SPM,78.2,59.28,44.41,39.99,TUR,Turkey
+San Marino,656,41,SMR,87.82,45.96,72.26,81.39,TKM,Turkmenistan
+Sao Tome and Principe,251,8,STP,42.43,13.1,57.53,38.87,UGA,Uganda
+Saudi Arabia,62545,339,SAU,64.21,60.89,40.18,37.59,UKR,Ukraine
+Senegal,2714,30,SEN,72.93,63.27,54.55,27.12,ARE,United Arab Emirates
+Serbia,10833,235,SRB,94.43,100,82.87,63.06,GBR,United Kingdom
+Seychelles,11,,SYC,97.52,90.92,50.46,45.81,USA,United States of America
+Sierra Leone,570,34,SLE,87.49,83.37,0.01,79.01,URY,Uruguay
+Singapore,29364,22,SGP,44.79,64.12,71.45,49.18,UZB,Uzbekistan
+Sint Maarten,77,15,SNT,61.05,28.73,73.32,28.41,VUT,Vanuatu
+Slovakia,1496,28,SVK,90.39,50.39,27.99,37.8,VEN,Venezuela
+Slovenia,1468,105,SVN,43.2,53.92,24.5,44.62,VNM,Viet Nam
+Somalia,1573,61,SOM,41.66,9.08,77.09,51.67,ZMB,Zambia
+South Africa,18003,339,ZAF,53.52,12.19,8.21,24.89,ZWE,Zimbabwe
+South Sudan,290,4,SSD,,,,,,
+Spain,279524,27888,ESP,,,,,,
+Sri Lanka,1028,9,LKA,,,,,,
+St. Barth,6,,STB,,,,,,
+St. Vincent Grenadines,18,,SVG,,,,,,
+Sudan,3138,121,SDN,,,,,,
+Suriname,11,1,SUR,,,,,,
+Sweden,31523,3831,SWE,,,,,,
+Switzerland,30658,1892,CHE,,,,,,
+Syria,58,3,SYR,,,,,,
+Taiwan,441,7,TWN,,,,,,
+Tajikistan,2140,41,TJK,,,,,,
+Tanzania,509,21,TZA,,,,,,
+Thailand,3037,56,THA,,,,,,
+Timor-Leste,24,,TLS,,,,,,
+Togo,340,12,TGO,,,,,,
+Trinidad and Tobago,116,8,TTO,,,,,,
+Tunisia,1045,47,TUN,,,,,,
+Turkey,152587,4222,TUR,,,,,,
+Turks and Caicos,12,1,TCA,,,,,,
+UAE,26004,233,ARE,,,,,,
+Uganda,264,,UGA,,,,,,
+UK,248293,35704,GBR,,,,,,
+Ukraine,19706,579,UKR,,,,,,
+United States,1593039,94941,USA,,,,,,
+Uruguay,746,20,URY,,,,,,
+Uzbekistan,2950,13,UZB,,,,,,
+Vatican City,12,,VAT,,,,,,
+Venezuela,824,10,VEN,,,,,,
+Vietnam,324,,VNM,,,,,,
+Western Sahara,6,,ESH,,,,,,
+Yemen,184,30,YMN,,,,,,
+Zambia,832,7,ZMB,,,,,,
+Zimbabwe,48,4,ZWE,,,,,,
