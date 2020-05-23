@@ -1,7 +1,7 @@
 // import our components
-import { Table } from "Table.js";
-import { Barchart } from "Barchart.js";
-import { Count } from "Count.js";
+import { Table } from "./Table.js";
+import { Barchart } from "./Barchart.js";
+import { Count } from "./Count.js";
 
 let table, barchart, count;
 
