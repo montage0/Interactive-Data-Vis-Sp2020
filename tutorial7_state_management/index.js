@@ -1,7 +1,7 @@
 // import our components
-import { Table } from "./Table.js";
-import { Barchart } from "./Barchart.js";
-import { Count } from "./Count.js";
+import { Table } from "Table.js";
+import { Barchart } from "Barchart.js";
+import { Count } from "Count.js";
 
 let table, barchart, count;
 
@@ -13,7 +13,7 @@ let state = {
   selectedMetric: null,
 };
 
-d3.csv("./epi.csv", d3.autoType).then(data => {
+d3.csv("epi.csv", d3.autoType).then(data => {
   console.log("data", data);
   state.data = data;
   state.domain = [
